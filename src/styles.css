@@ -8,6 +8,11 @@ form {
   margin-top: 20px;
 }
 
+.container {
+  width: 600px;
+  border-radius: 1px;
+}
+
 .currently-btn {
   border-radius: 4px;
   background-color: #9fd3c7;
@@ -35,13 +40,6 @@ h2 {
   position: relative;
   left: 200px;
   top: -75px;
-}
-
-.card {
-  position: relative;
-  left: 700px;
-  bottom: 200px;
-  color: #9fd3c7;
 }
 
 .row {
