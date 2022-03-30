@@ -32,72 +32,94 @@
   </head>
   <body>
     <div class="container">
-      <div class="wrapper"> 
-        <form id="search-form">
-        <input
-          class="searching"
-          id="search-text-input"
-          type="text"
-          placeholder="Search for a city"
-          autocomplete="off"
-          autofocus="on"
-        />
-        <input type="submit" value="search" id="button" />
-        <button class="currently-btn" id="location">Currently</button>
-      </form>
-      <h1 id="city">San Francisco</h1>
-      <div class="date" id="currently">Currently</div>
-      <h2>
-        <span id="temperature">55</span>
-        <span class="unit">
-          <a href="#" id="celsius">°C</a> |
-          <a href="#" id="fahrenheit">°F</a></span
-        >
-        <i class="fa-solid fa-cloud icon"></i>
-      </h2>
-      <ul class="metrics">
-        <li id="wind">Wind: 4 mph</li>
-        <li id="humidity">Humidity: 57%</li>
-      </ul>
-      <div class="row">
-        <div class="col forecast">
-          Tomorrow
-          <br />
-          <i class="fa-solid fa-cloud-sun icon"></i>
-          <br />
-          59°F
-        </div>
-        <div class="col forecast">
-          Sunday
-          <br />
-          <i class="fa-solid fa-cloud-sun icon"></i>
-          <br />
-          63°F
-        </div>
-        <div class="col forecast">
-          Monday
-          <br />
-          <i class="fa-solid fa-cloud-sun icon"></i>
-          <br />
-          63°F
-        </div>
-        <div class="col forecast">
-          Tuesday
-          <br />
+      <div class="wrapper">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                class="form-control searching"
+                id="search-text-input"
+                type="search"
+                placeholder="Search for a city..."
+                autocomplete="off"
+                autofocus="on"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+                id="button"
+              />
+            </div>
+            <div class="col-3">
+              <button class="currently-btn btn btn-success w-100" id="location">
+                Currently
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <div class="date" id="currently"></div>
+        <div id="description"></div>
+        <h2>
+          <span id="temperature"></span>
+          <span class="unit">
+            <a href="#" id="celsius">°C</a> |
+            <a href="#" id="fahrenheit">°F</a></span
+          >
           <i class="fa-solid fa-cloud icon"></i>
-          <br />
-          60°F
+        </h2>
+        <ul class="metrics">
+          <li>Wind: <span id="wind"></span> km/h</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+        </ul>
+        <div class="row forecast">
+          <div class="col forecast">
+            Tomorrow
+            <br />
+            <i class="fa-solid fa-cloud-sun icon"></i>
+            <br />
+            59°F
+          </div>
+          <div class="col forecast">
+            Sunday
+            <br />
+            <i class="fa-solid fa-cloud-sun icon"></i>
+            <br />
+            63°F
+          </div>
+          <div class="col forecast">
+            Monday
+            <br />
+            <i class="fa-solid fa-cloud-sun icon"></i>
+            <br />
+            63°F
+          </div>
+          <div class="col forecast">
+            Tuesday
+            <br />
+            <i class="fa-solid fa-cloud icon"></i>
+            <br />
+            60°F
+          </div>
+          <div class="col forecast">
+            Wednesday
+            <br />
+            <i class="fa-solid fa-cloud icon"></i>
+            <br />
+            59°F
+          </div>
         </div>
-        <div class="col forecast">
-          Wednesday
-          <br />
-          <i class="fa-solid fa-cloud icon"></i>
-          <br />
-          59°F
-        </div>
-      </div> 
+      </div>
     </div>
-    <div class="tag"><a href="https://github.com/sydney257/shecodes/find/main" target="_blank">Open-source code</a> by Sydney Mercado</div>
+    <div class="tag small">
+      <a href="https://github.com/sydney257/shecodes/find/main" target="_blank"
+        >Open-source code</a
+      >
+      by Sydney Mercado
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
