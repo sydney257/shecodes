@@ -17,12 +17,6 @@ h2 {
   font-size: 54px;
 }
 
-.unit {
-  font-size: 14px;
-  position: relative;
-  top: -25px;
-}
-
 .metrics {
   list-style: none;
   position: relative;
@@ -57,4 +51,19 @@ h2 {
   padding: 20px;
   margin: 20px auto;
   background-color: #ececec;
+}
+
+.weather-temperature .active {
+  color: #385170;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.unit {
+  font-size: 14px;
+  position: relative;
+  top: -25px;
 }
