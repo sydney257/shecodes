@@ -108,7 +108,6 @@ let submit = document.querySelector("#search-form");
 submit.addEventListener("submit", handleSubmit);
 searchCity("San Francisco");
 
-// Bonus
 function showCurrentLocation(position) {
   let lon = position.coords.longitude;
   let lat = position.coords.latitude;
